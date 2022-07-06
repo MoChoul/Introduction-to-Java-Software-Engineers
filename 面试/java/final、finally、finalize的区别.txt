@@ -1,0 +1,5 @@
+Final是一个安全修饰符,就是用final修饰的类不能被继承,用final声明的方法不能被重写,使用final声明的变量就相当于常量,不能被修改。
+
+Finally是在异常里经常用到的，就是try和cach里的代码执行完以后，必须要执行的方法，我们经常在finally里写一些关闭资源的方法，关闭IO流什么的，就算是try和catch里有return代码，也会执行finally里的内容的，除非在try catch里遇到System.exit代码，整个主线程就停掉了，才不会执行finally里的代码
+
+Finalize是Object类的一个方法，在垃圾收集器执行的时候会调用被回收对象的此方法，可以被垃圾回收
