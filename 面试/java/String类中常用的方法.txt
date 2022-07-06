@@ -1,0 +1,25 @@
+split()：把字符串分割成字符串数组
+
+indexOf()：从指定字符提取索引位置
+
+trim()：去除字符串两端空格
+
+replace()：替换
+
+hashCode()：返回此字符串的哈希码
+
+subString()：截取字符串
+
+equals()：比较
+
+length()：获取字符串的长度
+
+valueOf()：转换为字符串
+
+concat()：将指定字符串连接到此字符串的结尾
+
+compareTo()：用来比较两个字符串的字典顺序
+
+compareToIgnoreCase()：不考虑大小写,按字典顺序比较两个字符串
+
+contains()： 检查一个字符串中是否包含想要查找的值
