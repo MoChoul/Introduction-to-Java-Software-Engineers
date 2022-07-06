@@ -1,0 +1,11 @@
+最常见的莫过于空指针NullPointException了，一般都是空对象调用他的方法了
+
+还有就是FileNotFound异常了，在文件操作的时候，一不小心路径写错了，或者是windows切换linux的时候，因为路径格式不一致，经常会有这个错误
+
+还有就是ClassCastException，类转换异常，这块从json中的数据转换成类的时候经常会出现
+
+接着就是SQLException，非常熟悉的错误信息就是Unknown column xxx，这种错误的话，就是列名错了，
+
+还有就是 You have an error in your SQL syntax,check xxxx near xxx，这个错误就是sql语法错误，
+
+异常信息会指出来错误的具体地方，还有就是Result consisted of more than one row，这个的话发生在selectOne方法的时候，想要获取一个结果集，但是返回了好多个。
