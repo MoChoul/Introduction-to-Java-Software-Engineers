@@ -1,3 +1,0 @@
-也可以被问成：线程安全的HashMap类有哪些，ConcurrentHashMap如何保证线程安全
-
-ConcurrentHashMap是线程安全的HashMap，内部采用了的"分段锁"策略，ConcurrentHashMap的主干是个Segment数组。Segment 通过继承ReentrantLock 来进行加锁，所以每次需要加锁的操作锁住的是一个 segment，这样只要保证每个 Segment 是线程安全的，也就实现了全局的线程安全。一个Segment就是一个子哈希表，Segment里维护了一个HashEntry数组，默认有16 个 Segment，所以理论上，最多可以同时支持 16 个线程并发写，只要它们的操作分别分布在不同的 Segment 上。
